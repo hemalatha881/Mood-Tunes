@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodTune</title>
+    <link rel="stylesheet" href="emotion.css"> <!-- Link to external CSS file -->
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>&hearts; Welcome to MoodTunes &hearts;</h1>
+            <p>&hearts; Let Your Emotions Choose The Perfect Song For You &hearts;</p>
+        </header>
+
+        <div class="message_box">
+            <h2>Messages</h2>
+            <textarea name="message_box" id="message_box" cols="100" placeholder="Type your message here..."></textarea>
+            <div id="message_container"></div>
+        </div>
+
+        <div class="center">
+            <!-- Update the button in index.html -->
+            <button id="readyButton" onclick="window.location.href='face-scan.html'"><b>READY TO GO</b></button>
+            <p>made by &hearts; Hemalatha &#x1FAF6;</p>
+        </div>
+
+        <!-- Emotion-based emojis will be displayed here -->
+        <div id="emotion-emoji" class="emoji-section"></div>
+
+        <footer>
+            <h3>Connect with me &#128522;</h3>
+            <p>
+                <a href="https://twitter.com/YourTwitterHandle" target="_blank">Twitter</a>
+                <a href="https://instagram.com/YourInstagramHandle" target="_blank">Instagram</a>
+                <a href="mailto:youremail@example.com" target="_blank">Email</a>
+            </p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to external JavaScript file -->
+</body>
+
+</html>

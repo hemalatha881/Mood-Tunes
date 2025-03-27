@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Scan & Music</title>
+    <link rel="stylesheet" href="face-scan.css"> <!-- Link to external CSS file -->
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>&hearts; Scan Your Face &hearts;</h1>
+            <p>&hearts; Let's Detect Your Emotion and Play a Song &hearts;</p>
+        </header>
+
+        <!-- Video element for face scanning -->
+        <div class="video-container">
+            <video id="video" width="640" height="480" autoplay></video>
+            <canvas id="canvas" width="640" height="480"></canvas>
+        </div>
+
+        <!-- OK Button -->
+        <button id="ok-button">OK</button>
+
+        <!-- Emotion and Song Section -->
+        <div id="emotion-result">
+            <h2>Detected Emotion: <span id="detected-emotion">😐</span></h2>
+            <h2>Now Playing: <span id="now-playing">No song selected</span></h2>
+            <audio id="audio-player" controls>
+                <source id="audio-source" src="" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <footer>
+            <p>made by &hearts; Hemalatha &#x1FAF6;</p>
+        </footer>
+    </div>
+
+    <!-- Include FaceAPI.js -->
+    <script src="https://cdn.jsdelivr.net/npm/face-api.js/dist/face-api.min.js"></script>
+    <script src="face-scan.js"></script> <!-- Link to external JavaScript file -->
+</body>
+
+</html>
